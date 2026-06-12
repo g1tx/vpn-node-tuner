@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ xray-reality-tuner
+# ⚡ exit-node-optimizer
 
 **Универсальный тюнинг сети и ядра Linux для exit-нод Xray (VLESS + REALITY + TCP).**
 Один скрипт автоматически подстраивается под железо — от слабого VPS до мощного bare-metal.
@@ -17,7 +17,7 @@
 
 ## 📖 Что это
 
-`xray-reality-tuner` — это **один bash-скрипт**, который приводит сетевой стек Linux в порядок для работы прокси/VPN exit-ноды на базе **Xray-core** (VLESS + REALITY) внутри **Docker** (в т.ч. панель **Remnawave**).
+`exit-node-optimizer` — это **один bash-скрипт**, который приводит сетевой стек Linux в порядок для работы прокси/VPN exit-ноды на базе **Xray-core** (VLESS + REALITY) внутри **Docker** (в т.ч. панель **Remnawave**).
 
 Вместо того чтобы вслепую копировать чужие `sysctl`-конфиги, скрипт **сам определяет** ваше железо (CPU, RAM, сетевую карту, скорость линка) и подбирает **безопасные, выверенные** значения. Никакого cargo-cult — только параметры, которые реально имеют смысл.
 
@@ -62,15 +62,15 @@
 ### Способ 1 — быстрый старт (one-liner)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/g1tx/xray-reality-tuner/main/tune.sh -o tune.sh
+curl -fsSL https://raw.githubusercontent.com/g1tx/exit-node-optimizer/main/tune.sh -o tune.sh
 sudo bash tune.sh
 ```
 
 ### Способ 2 — через git
 
 ```bash
-git clone https://github.com/g1tx/xray-reality-tuner.git
-cd xray-reality-tuner
+git clone https://github.com/g1tx/exit-node-optimizer.git
+cd exit-node-optimizer
 sudo ./tune.sh
 ```
 
