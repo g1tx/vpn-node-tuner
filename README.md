@@ -62,19 +62,19 @@
 ### Способ 1 — быстрый старт (one-liner)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/USERNAME/xray-reality-tuner/main/tune.sh -o tune.sh
+curl -fsSL https://raw.githubusercontent.com/g1tx/xray-reality-tuner/main/tune.sh -o tune.sh
 sudo bash tune.sh
 ```
 
 ### Способ 2 — через git
 
 ```bash
-git clone https://github.com/USERNAME/xray-reality-tuner.git
+git clone https://github.com/g1tx/xray-reality-tuner.git
 cd xray-reality-tuner
 sudo ./tune.sh
 ```
 
-> 📌 **Замените `USERNAME`** на ваш GitHub-логин после публикации.
+> 📌 **Замените `g1tx`** на ваш GitHub-логин после публикации.
 
 ### ✅ Рекомендуемый порядок
 
