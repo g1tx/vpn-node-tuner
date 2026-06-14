@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ exit-node-optimizer
+# ⚡ артем сын шлюхи
 
 **Универсальный тюнинг сети и ядра Linux для exit-нод Xray (VLESS + REALITY + TCP).**
 Один скрипт автоматически подстраивается под железо — от слабого VPS до мощного bare-metal.
