@@ -1,0 +1,1141 @@
+{
+  "summary": {
+    "method": "4 concurrent public Ubuntu ISO HTTPS downloads through existing REALITY/Vision node; 10s; each flow capped 10MiB/s; no concurrent request burst; client and server share 1vCPU host",
+    "kernel": "6.8.0-147-generic",
+    "mem_total_mib": 961.617,
+    "mem_available_start_mib": 485.516,
+    "mem_available_min_mib": 417.336,
+    "peak_swap_used_mib": 2.523,
+    "peak_xray_rss_sum_mib": 34.508,
+    "cpu_measurement_phase": "bulk-load window only",
+    "cpu_measurement_duration_s": 9.643,
+    "cpu_busy_pct_including_steal": 51.033,
+    "cpu_steal_pct": 4.442,
+    "vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "pgmajfault": 3,
+      "oom_kill": 0
+    },
+    "download_total_bytes": 163126906,
+    "aggregate_mbit_s": 130.477,
+    "downloads": [
+      {
+        "duration_s": 10.001513,
+        "bytes": 14247933,
+        "speed_Bps": 1424577.0,
+        "http": "200"
+      },
+      {
+        "duration_s": 10.000153,
+        "bytes": 30310400,
+        "speed_Bps": 3030993.0,
+        "http": "200"
+      },
+      {
+        "duration_s": 10.001889,
+        "bytes": 105840640,
+        "speed_Bps": 10582065.0,
+        "http": "200"
+      },
+      {
+        "duration_s": 10.000807,
+        "bytes": 12727933,
+        "speed_Bps": 1272690.0,
+        "http": "200"
+      }
+    ],
+    "concurrent_https": {
+      "total": 0,
+      "successful": 0,
+      "median_ms": null,
+      "p95_ms": null
+    },
+    "benchmark_summary": [
+      "idle: 10 successful probes; TTFB median 82.34 ms, p95 1084.31 ms",
+      "loaded: 30 successful probes; TTFB median 90.00 ms, p95 138.95 ms",
+      "Probe errors (curl failure or HTTP outside 200..399): 0",
+      "Failed downloads: 0 / 4",
+      "Aggregate download rate over longest download: 130.48 Mbit/s",
+      "Raw probe timings: probes.tsv (seconds).",
+      "Per-download fields: duration_s, bytes, bytes_per_second, HTTP code.",
+      "Download exit 28 means the requested time limit; other nonzero codes indicate failure.",
+      "If downloads finish early or fail, this is not a sustained loaded-latency test."
+    ],
+    "valid_bulk_load": true,
+    "limitations": [
+      "One credential with concurrent requests, not 30 independently active users.",
+      "Client/server share the same 1vCPU; download is public WAN and rate-capped, not a gigabit saturation result.",
+      "No before/after comparison was performed in this memory-capped run."
+    ]
+  },
+  "probes_tsv": "phase\ttotal_s\tfirst_byte_s\thttp_code\tcurl_exit\nidle\t0.079887\t0.079817\t200\t0\nidle\t1.084381\t1.084308\t200\t0\nidle\t0.086337\t0.086262\t200\t0\nidle\t0.088061\t0.087981\t200\t0\nidle\t0.169142\t0.169073\t200\t0\nidle\t0.084937\t0.084870\t200\t0\nidle\t0.076541\t0.076476\t200\t0\nidle\t0.076000\t0.075936\t200\t0\nidle\t0.077320\t0.077252\t200\t0\nidle\t0.069021\t0.068885\t200\t0\nloaded\t0.215568\t0.215496\t200\t0\nloaded\t0.093283\t0.093238\t200\t0\nloaded\t0.084931\t0.084822\t200\t0\nloaded\t0.088872\t0.088815\t200\t0\nloaded\t0.091244\t0.091180\t200\t0\nloaded\t0.096014\t0.095855\t200\t0\nloaded\t0.084460\t0.084321\t200\t0\nloaded\t0.083179\t0.081032\t200\t0\nloaded\t0.092740\t0.092682\t200\t0\nloaded\t0.088420\t0.088361\t200\t0\nloaded\t0.091282\t0.091197\t200\t0\nloaded\t0.098587\t0.098510\t200\t0\nloaded\t0.079813\t0.079555\t200\t0\nloaded\t0.081927\t0.081846\t200\t0\nloaded\t0.100103\t0.100044\t200\t0\nloaded\t0.116026\t0.115731\t200\t0\nloaded\t0.086020\t0.084658\t200\t0\nloaded\t0.080951\t0.080884\t200\t0\nloaded\t0.139018\t0.138954\t200\t0\nloaded\t0.104395\t0.104331\t200\t0\nloaded\t0.081833\t0.081689\t200\t0\nloaded\t0.098187\t0.098116\t200\t0\nloaded\t0.094923\t0.094853\t200\t0\nloaded\t0.107458\t0.107390\t200\t0\nloaded\t0.098291\t0.098218\t200\t0\nloaded\t0.073787\t0.073611\t200\t0\nloaded\t0.081483\t0.081415\t200\t0\nloaded\t0.067836\t0.067773\t200\t0\nloaded\t0.084884\t0.084750\t200\t0\nloaded\t0.082782\t0.082694\t200\t0\n",
+  "memory_cpu_samples": [
+    {
+      "time": 1793390176.3015845,
+      "MemTotal": 984696,
+      "MemAvailable": 497168,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8376,
+        0,
+        3557,
+        109276,
+        271,
+        0,
+        170,
+        336
+      ],
+      "xray_rss_kib": 25884,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390176.5821629,
+      "MemTotal": 984696,
+      "MemAvailable": 497156,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8379,
+        0,
+        3558,
+        109301,
+        271,
+        0,
+        170,
+        336
+      ],
+      "xray_rss_kib": 29868,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390176.8480563,
+      "MemTotal": 984696,
+      "MemAvailable": 497156,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8379,
+        0,
+        3559,
+        109325,
+        271,
+        0,
+        170,
+        336
+      ],
+      "xray_rss_kib": 29868,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390177.1111677,
+      "MemTotal": 984696,
+      "MemAvailable": 496908,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8380,
+        0,
+        3560,
+        109350,
+        271,
+        0,
+        170,
+        336
+      ],
+      "xray_rss_kib": 29868,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390177.3749547,
+      "MemTotal": 984696,
+      "MemAvailable": 504744,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8385,
+        0,
+        3562,
+        109369,
+        271,
+        0,
+        170,
+        337
+      ],
+      "xray_rss_kib": 31596,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390177.6371167,
+      "MemTotal": 984696,
+      "MemAvailable": 504520,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8391,
+        0,
+        3563,
+        109388,
+        271,
+        0,
+        170,
+        337
+      ],
+      "xray_rss_kib": 31796,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390177.9040246,
+      "MemTotal": 984696,
+      "MemAvailable": 504540,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8397,
+        0,
+        3565,
+        109407,
+        271,
+        0,
+        170,
+        337
+      ],
+      "xray_rss_kib": 31980,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390178.1663852,
+      "MemTotal": 984696,
+      "MemAvailable": 504560,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8401,
+        0,
+        3566,
+        109427,
+        271,
+        0,
+        170,
+        337
+      ],
+      "xray_rss_kib": 32160,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390178.4318857,
+      "MemTotal": 984696,
+      "MemAvailable": 504332,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8402,
+        0,
+        3567,
+        109451,
+        271,
+        0,
+        170,
+        339
+      ],
+      "xray_rss_kib": 32160,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390178.6950336,
+      "MemTotal": 984696,
+      "MemAvailable": 504332,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8403,
+        0,
+        3568,
+        109476,
+        271,
+        0,
+        170,
+        339
+      ],
+      "xray_rss_kib": 32172,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390178.968526,
+      "MemTotal": 984696,
+      "MemAvailable": 504336,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8405,
+        0,
+        3568,
+        109501,
+        271,
+        0,
+        170,
+        340
+      ],
+      "xray_rss_kib": 32172,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390179.2315338,
+      "MemTotal": 984696,
+      "MemAvailable": 504312,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8407,
+        0,
+        3569,
+        109523,
+        271,
+        0,
+        171,
+        341
+      ],
+      "xray_rss_kib": 32180,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390179.4959161,
+      "MemTotal": 984696,
+      "MemAvailable": 514712,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8412,
+        0,
+        3571,
+        109541,
+        271,
+        0,
+        171,
+        342
+      ],
+      "xray_rss_kib": 32304,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390179.7616415,
+      "MemTotal": 984696,
+      "MemAvailable": 510968,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8418,
+        0,
+        3573,
+        109560,
+        271,
+        0,
+        171,
+        342
+      ],
+      "xray_rss_kib": 32404,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390180.0260952,
+      "MemTotal": 984696,
+      "MemAvailable": 510716,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8423,
+        0,
+        3575,
+        109578,
+        271,
+        0,
+        171,
+        343
+      ],
+      "xray_rss_kib": 32540,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390180.299019,
+      "MemTotal": 984696,
+      "MemAvailable": 510476,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8428,
+        0,
+        3577,
+        109598,
+        271,
+        0,
+        171,
+        343
+      ],
+      "xray_rss_kib": 32704,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390180.5829842,
+      "MemTotal": 984696,
+      "MemAvailable": 510224,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8433,
+        0,
+        3579,
+        109620,
+        271,
+        0,
+        171,
+        344
+      ],
+      "xray_rss_kib": 32844,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390180.8604329,
+      "MemTotal": 984696,
+      "MemAvailable": 510224,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8437,
+        0,
+        3580,
+        109641,
+        271,
+        0,
+        171,
+        344
+      ],
+      "xray_rss_kib": 32896,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390181.138904,
+      "MemTotal": 984696,
+      "MemAvailable": 510224,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8442,
+        0,
+        3582,
+        109662,
+        271,
+        0,
+        171,
+        346
+      ],
+      "xray_rss_kib": 33332,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390181.4238474,
+      "MemTotal": 984696,
+      "MemAvailable": 509972,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8448,
+        0,
+        3583,
+        109683,
+        271,
+        0,
+        171,
+        346
+      ],
+      "xray_rss_kib": 33496,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390181.7124245,
+      "MemTotal": 984696,
+      "MemAvailable": 509972,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8453,
+        0,
+        3585,
+        109704,
+        271,
+        0,
+        171,
+        346
+      ],
+      "xray_rss_kib": 33696,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390182.0209994,
+      "MemTotal": 984696,
+      "MemAvailable": 497372,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8475,
+        0,
+        3589,
+        109708,
+        271,
+        0,
+        172,
+        347
+      ],
+      "xray_rss_kib": 34384,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390182.2933547,
+      "MemTotal": 984696,
+      "MemAvailable": 493080,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8484,
+        0,
+        3595,
+        109717,
+        271,
+        0,
+        174,
+        348
+      ],
+      "xray_rss_kib": 34532,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390182.5892334,
+      "MemTotal": 984696,
+      "MemAvailable": 436324,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8492,
+        0,
+        3600,
+        109729,
+        271,
+        0,
+        178,
+        349
+      ],
+      "xray_rss_kib": 34636,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390182.866362,
+      "MemTotal": 984696,
+      "MemAvailable": 439148,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8497,
+        0,
+        3604,
+        109746,
+        271,
+        0,
+        179,
+        350
+      ],
+      "xray_rss_kib": 35012,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390183.1548488,
+      "MemTotal": 984696,
+      "MemAvailable": 444544,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8503,
+        0,
+        3607,
+        109765,
+        271,
+        0,
+        180,
+        352
+      ],
+      "xray_rss_kib": 35072,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390183.4294765,
+      "MemTotal": 984696,
+      "MemAvailable": 439640,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8507,
+        0,
+        3610,
+        109783,
+        271,
+        0,
+        182,
+        352
+      ],
+      "xray_rss_kib": 35128,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390183.7363667,
+      "MemTotal": 984696,
+      "MemAvailable": 440476,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8514,
+        0,
+        3614,
+        109799,
+        271,
+        0,
+        184,
+        353
+      ],
+      "xray_rss_kib": 35156,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390184.0432696,
+      "MemTotal": 984696,
+      "MemAvailable": 444620,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8521,
+        0,
+        3620,
+        109812,
+        271,
+        0,
+        187,
+        355
+      ],
+      "xray_rss_kib": 35176,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390184.3422468,
+      "MemTotal": 984696,
+      "MemAvailable": 431764,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8529,
+        0,
+        3626,
+        109824,
+        271,
+        0,
+        190,
+        356
+      ],
+      "xray_rss_kib": 35192,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390184.6143255,
+      "MemTotal": 984696,
+      "MemAvailable": 433540,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8537,
+        0,
+        3632,
+        109833,
+        271,
+        0,
+        193,
+        357
+      ],
+      "xray_rss_kib": 35248,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390184.8876421,
+      "MemTotal": 984696,
+      "MemAvailable": 435356,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8546,
+        0,
+        3639,
+        109841,
+        271,
+        0,
+        196,
+        357
+      ],
+      "xray_rss_kib": 35260,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390185.1652408,
+      "MemTotal": 984696,
+      "MemAvailable": 441756,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8555,
+        0,
+        3645,
+        109848,
+        271,
+        0,
+        199,
+        359
+      ],
+      "xray_rss_kib": 35288,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390185.4466233,
+      "MemTotal": 984696,
+      "MemAvailable": 441264,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8566,
+        0,
+        3651,
+        109856,
+        271,
+        0,
+        202,
+        360
+      ],
+      "xray_rss_kib": 35288,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390185.7157521,
+      "MemTotal": 984696,
+      "MemAvailable": 441016,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8572,
+        0,
+        3654,
+        109872,
+        271,
+        0,
+        202,
+        360
+      ],
+      "xray_rss_kib": 35288,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390185.9839895,
+      "MemTotal": 984696,
+      "MemAvailable": 452000,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8578,
+        0,
+        3657,
+        109889,
+        271,
+        0,
+        203,
+        360
+      ],
+      "xray_rss_kib": 35296,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390186.2558572,
+      "MemTotal": 984696,
+      "MemAvailable": 456148,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8583,
+        0,
+        3659,
+        109907,
+        271,
+        0,
+        203,
+        362
+      ],
+      "xray_rss_kib": 35300,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390186.5609102,
+      "MemTotal": 984696,
+      "MemAvailable": 431328,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8590,
+        0,
+        3665,
+        109920,
+        271,
+        0,
+        207,
+        363
+      ],
+      "xray_rss_kib": 35300,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390186.872252,
+      "MemTotal": 984696,
+      "MemAvailable": 437908,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8598,
+        0,
+        3674,
+        109928,
+        271,
+        0,
+        211,
+        364
+      ],
+      "xray_rss_kib": 35308,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390187.1846669,
+      "MemTotal": 984696,
+      "MemAvailable": 442788,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8606,
+        0,
+        3678,
+        109944,
+        271,
+        0,
+        212,
+        366
+      ],
+      "xray_rss_kib": 35312,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390187.4500206,
+      "MemTotal": 984696,
+      "MemAvailable": 444320,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8612,
+        0,
+        3681,
+        109960,
+        271,
+        0,
+        212,
+        366
+      ],
+      "xray_rss_kib": 35328,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390187.7161822,
+      "MemTotal": 984696,
+      "MemAvailable": 448436,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8619,
+        0,
+        3683,
+        109977,
+        271,
+        0,
+        213,
+        366
+      ],
+      "xray_rss_kib": 35336,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390187.9818404,
+      "MemTotal": 984696,
+      "MemAvailable": 450556,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8625,
+        0,
+        3687,
+        109992,
+        271,
+        0,
+        213,
+        367
+      ],
+      "xray_rss_kib": 35176,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390188.2532358,
+      "MemTotal": 984696,
+      "MemAvailable": 449680,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8633,
+        0,
+        3689,
+        110006,
+        271,
+        0,
+        214,
+        370
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390188.532817,
+      "MemTotal": 984696,
+      "MemAvailable": 454812,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8639,
+        0,
+        3694,
+        110018,
+        271,
+        0,
+        218,
+        372
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390188.821735,
+      "MemTotal": 984696,
+      "MemAvailable": 427352,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8645,
+        0,
+        3699,
+        110031,
+        271,
+        0,
+        222,
+        375
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390189.121142,
+      "MemTotal": 984696,
+      "MemAvailable": 433404,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8652,
+        0,
+        3702,
+        110048,
+        271,
+        0,
+        223,
+        376
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390189.423073,
+      "MemTotal": 984696,
+      "MemAvailable": 439164,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8658,
+        0,
+        3708,
+        110061,
+        271,
+        0,
+        227,
+        378
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390189.7530625,
+      "MemTotal": 984696,
+      "MemAvailable": 438164,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8667,
+        0,
+        3713,
+        110076,
+        271,
+        0,
+        229,
+        380
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390190.0288687,
+      "MemTotal": 984696,
+      "MemAvailable": 440944,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8673,
+        0,
+        3715,
+        110094,
+        271,
+        0,
+        229,
+        382
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390190.2954547,
+      "MemTotal": 984696,
+      "MemAvailable": 449860,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8682,
+        0,
+        3718,
+        110108,
+        271,
+        0,
+        229,
+        383
+      ],
+      "xray_rss_kib": 35184,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390190.562141,
+      "MemTotal": 984696,
+      "MemAvailable": 450032,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8688,
+        0,
+        3720,
+        110123,
+        271,
+        0,
+        230,
+        384
+      ],
+      "xray_rss_kib": 35188,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390190.8343945,
+      "MemTotal": 984696,
+      "MemAvailable": 449416,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8695,
+        0,
+        3724,
+        110136,
+        271,
+        0,
+        233,
+        386
+      ],
+      "xray_rss_kib": 35188,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390191.1158335,
+      "MemTotal": 984696,
+      "MemAvailable": 432320,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8703,
+        0,
+        3730,
+        110145,
+        271,
+        0,
+        236,
+        388
+      ],
+      "xray_rss_kib": 35192,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390191.3914156,
+      "MemTotal": 984696,
+      "MemAvailable": 436740,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8706,
+        0,
+        3735,
+        110161,
+        271,
+        0,
+        239,
+        389
+      ],
+      "xray_rss_kib": 35192,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    },
+    {
+      "time": 1793390191.6644912,
+      "MemTotal": 984696,
+      "MemAvailable": 438612,
+      "SwapTotal": 524284,
+      "SwapFree": 521700,
+      "cpu_ticks": [
+        8708,
+        0,
+        3739,
+        110182,
+        271,
+        0,
+        240,
+        390
+      ],
+      "xray_rss_kib": 35192,
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=179201\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=92415"
+    }
+  ],
+  "concurrent_probes": [],
+  "lab_socks_listener_after_cleanup": false
+}

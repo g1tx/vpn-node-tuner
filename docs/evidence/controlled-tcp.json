@@ -1,0 +1,133 @@
+{
+  "method": "100 Mbit/s HTB, two 20ms netem hops, 4 parallel TCP download flows, 18s + 2s omitted, 3 rotated repetitions; single host 1 vCPU, veth offloads disabled",
+  "runs": [
+    {
+      "case": "bbr-fq",
+      "run": 1,
+      "mbps": 93.20734069052766,
+      "median_ms": 40.2,
+      "p95_ms": 40.4,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 10.36,
+      "cpu_steal_pct": 1.61
+    },
+    {
+      "case": "bbr-fq",
+      "run": 2,
+      "mbps": 94.6634108785789,
+      "median_ms": 40.2,
+      "p95_ms": 40.5,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 9.780000000000001,
+      "cpu_steal_pct": 0.84
+    },
+    {
+      "case": "bbr-fq",
+      "run": 3,
+      "mbps": 93.67367923328605,
+      "median_ms": 40.1,
+      "p95_ms": 40.3,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 14.400000000000006,
+      "cpu_steal_pct": 0.42
+    },
+    {
+      "case": "bbr-pfifo",
+      "run": 1,
+      "mbps": 93.9646607742216,
+      "median_ms": 42.2,
+      "p95_ms": 42.6,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 13.879999999999995,
+      "cpu_steal_pct": 0.6
+    },
+    {
+      "case": "bbr-pfifo",
+      "run": 2,
+      "mbps": 93.32349212409184,
+      "median_ms": 42.4,
+      "p95_ms": 43.1,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 10.959999999999994,
+      "cpu_steal_pct": 1.83
+    },
+    {
+      "case": "bbr-pfifo",
+      "run": 3,
+      "mbps": 93.78839636707936,
+      "median_ms": 42.2,
+      "p95_ms": 42.5,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 9.709999999999994,
+      "cpu_steal_pct": 0.3
+    },
+    {
+      "case": "cubic-pfifo",
+      "run": 1,
+      "mbps": 93.32405206977303,
+      "median_ms": 45.7,
+      "p95_ms": 49.1,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 9.079999999999998,
+      "cpu_steal_pct": 3.65
+    },
+    {
+      "case": "cubic-pfifo",
+      "run": 2,
+      "mbps": 93.8275846449565,
+      "median_ms": 45.8,
+      "p95_ms": 46.5,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 12.560000000000002,
+      "cpu_steal_pct": 3.1
+    },
+    {
+      "case": "cubic-pfifo",
+      "run": 3,
+      "mbps": 94.1390532287968,
+      "median_ms": 46.2,
+      "p95_ms": 47.0,
+      "samples": 95,
+      "retransmits": 0,
+      "cpu_busy_pct": 9.61,
+      "cpu_steal_pct": 3.09
+    }
+  ],
+  "summary": [
+    {
+      "case": "bbr-fq",
+      "runs": 3,
+      "mbps": 93.674,
+      "median_ms": 40.2,
+      "p95_ms": 40.4,
+      "cpu_busy_pct": 10.36,
+      "cpu_steal_pct": 0.84
+    },
+    {
+      "case": "bbr-pfifo",
+      "runs": 3,
+      "mbps": 93.788,
+      "median_ms": 42.2,
+      "p95_ms": 42.6,
+      "cpu_busy_pct": 10.96,
+      "cpu_steal_pct": 0.6
+    },
+    {
+      "case": "cubic-pfifo",
+      "runs": 3,
+      "mbps": 93.828,
+      "median_ms": 45.8,
+      "p95_ms": 47.0,
+      "cpu_busy_pct": 9.61,
+      "cpu_steal_pct": 3.1
+    }
+  ]
+}

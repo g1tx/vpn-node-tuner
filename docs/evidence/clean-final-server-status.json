@@ -1,0 +1,41 @@
+{
+  "verified_at_utc": "2026-11-01T08:06:19Z",
+  "kernel": "6.8.0-147-generic",
+  "cpu_count": 1,
+  "memory_total_mib": 1812.1875,
+  "memory_available_mib": 1353.19921875,
+  "temporary_boot_memory_limit_absent": true,
+  "qdisc": "qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64",
+  "queue_service_enabled": "enabled",
+  "queue_service_active": "active",
+  "sysctl": {
+    "net.ipv4.tcp_congestion_control": "cubic",
+    "net.core.default_qdisc": "fq_codel",
+    "net.core.rmem_max": "16777216",
+    "net.core.wmem_max": "16777216",
+    "net.ipv4.tcp_rmem": "4096\t131072\t16777216",
+    "net.ipv4.tcp_wmem": "4096\t16384\t16777216",
+    "net.ipv4.tcp_mem": "19971\t26631\t39942",
+    "net.ipv4.tcp_mtu_probing": "1",
+    "net.ipv4.tcp_notsent_lowat": "4294967295"
+  },
+  "tuner_sha256": "d9680d030dab59720b69cb68424b598324681234dd383925323df1bcbc11a8d6",
+  "original_snapshot_retained": true,
+  "checkpoint_absent": true,
+  "containers": [],
+  "test_listeners_absent": true,
+  "private_test_config_absent": true,
+  "temporary_ssh_access_removed": {
+    "new": true,
+    "old": true
+  },
+  "verification": {
+    "tuner_tests": 40,
+    "benchmark_tests": 4,
+    "bash_syntax": "passed",
+    "shellcheck": "passed",
+    "native_physical_interface": "passed",
+    "reboot_persistence": "passed",
+    "independent_review": "approved"
+  }
+}

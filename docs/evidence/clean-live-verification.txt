@@ -1,0 +1,206 @@
+clean-final-live.log
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Dry-run complete: no host or state changes.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 1)
+net.core.rmem_max = 16777216 (was 16777216)
+net.core.wmem_max = 16777216 (was 16777216)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	16777216)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	16777216)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+/var/lib/exit-node-optimizer/original/sysctl: OK
+profile=bbr NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq (was fq_codel)
+net.ipv4.tcp_congestion_control = bbr (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 1)
+net.core.rmem_max = 16777216 (was 16777216)
+net.core.wmem_max = 16777216 (was 16777216)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	16777216)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	16777216)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=bbr FIFO fallback=fq; preserve mq root and fq options, enable fq pacing.
+Applied and verified profile=bbr, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: bbr. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+qdisc fq fffe: root refcnt 2 limit 10000p flow_limit 100p buckets 1024 orphan_mask 1023 quantum 3028b initial_quantum 15140b low_rate_threshold 550Kbit refill_delay 40ms timer_slack 10us horizon 10s horizon_drop 
+Restored original files, runtime sysctls, qdisc configuration and service state.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+Restored original files, runtime sysctls, qdisc configuration and service state.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+Restored original files, runtime sysctls, qdisc configuration and service state.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+WARN: transaction rolled back
+Restored original files, runtime sysctls, qdisc configuration and service state.
+PASS: balanced/reapply/bbr/revert/reapply and conflict rollback on real Ubuntu.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+exit-node-clean-xray
+
+clean-final-extra.log
+profile=bbr NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq (was fq_codel)
+net.ipv4.tcp_congestion_control = bbr (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 1)
+net.core.rmem_max = 16777216 (was 16777216)
+net.core.wmem_max = 16777216 (was 16777216)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	16777216)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	16777216)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=bbr FIFO fallback=fq; preserve mq root and fq options, enable fq pacing.
+Applied and verified profile=bbr, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: bbr. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+qdisc fq 0: root refcnt 2 limit 10000p flow_limit 100p buckets 1024 orphan_mask 1023 quantum 3028b initial_quantum 15140b low_rate_threshold 550Kbit refill_delay 40ms timer_slack 10us horizon 10s horizon_drop 
+Restored original files, runtime sysctls, qdisc configuration and service state.
+profile=balanced NIC=ens3 RAM=825168KiB bandwidth budget=1000Mbit/s RTT=100ms BDP=12500000B socket target=16777216B
+Bandwidth is an assumed/configured budget, never detected from advertised NIC speed.
+net.core.default_qdisc = fq_codel (was fq_codel)
+net.ipv4.tcp_congestion_control = cubic (was cubic)
+net.ipv4.tcp_moderate_rcvbuf = 1 (was 1)
+net.ipv4.tcp_mtu_probing = 1 (was 0)
+net.core.rmem_max = 16777216 (was 212992)
+net.core.wmem_max = 16777216 (was 212992)
+net.ipv4.tcp_rmem = 4096 131072 16777216 (was 4096	131072	5490240)
+net.ipv4.tcp_wmem = 4096 16384 16777216 (was 4096	16384	4194304)
+Existing larger maxima are preserved; aggregate memory, initial/default allocations and txqueuelen are unchanged.
+Egress policy: profile=balanced FIFO fallback=fq_codel; preserve mq root and fq options, enable fq pacing.
+Balanced preserves current congestion control and supported fq/fq_codel queues.
+Applied and verified profile=balanced, socket settings, egress queues and persistence. Original snapshot retained for --revert.
+Default TCP congestion control: cubic. Existing connections and application-selected algorithms may retain another algorithm. No application restarts were performed.
+Restored original files, runtime sysctls, qdisc configuration and service state.
+PASS: implicit fq0 boot helper and changed-flow restoration on physical interface.
+
+memory-boot.log
+New boot confirmed: 54f712d6-e997-4c9e-ae7f-8caf47f9c0b5
+6.8.0-147-generic
+MemTotal:        1855624 kB
+MemFree:         1165632 kB
+MemAvailable:    1404980 kB
+BOOT_IMAGE=/boot/vmlinuz-6.8.0-147-generic root=UUID=d582646e-0e5d-4d66-ac4f-dd42c07afcfe ro
+
+
+persistence-boot.log
+New boot confirmed: 24eda7fc-4bf8-42c7-a595-ae57238327d4
+6.8.0-147-generic
+MemTotal:        1855680 kB
+MemFree:         1184600 kB
+MemAvailable:    1403864 kB
+BOOT_IMAGE=/boot/vmlinuz-6.8.0-147-generic root=UUID=d582646e-0e5d-4d66-ac4f-dd42c07afcfe ro
+
+
+persistence-status.log
+enabled
+active
+net.ipv4.tcp_congestion_control = cubic
+net.core.default_qdisc = fq_codel
+net.ipv4.tcp_mtu_probing = 1
+qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+exit-node-clean-xray Up 44 seconds
+
+post-reboot-smoke.log
+post-reboot REALITY/Vision HTTPS: 200
+
+clean-cleanup.log
+exit-node-clean-payload
+remnawave-nginx Up 36 hours
+remnanode Up 36 hours
+old: temporary containers/listeners/config credentials removed.
+exit-node-clean-xray
+Untagged: exit-node-clean-lab:xray
+Deleted: sha256:dfe06b7d3bae15f8c0b1ed26c814b84bb2dfbb7a477ec2becc69939742405c59
+Deleted: sha256:70374b72231dfa8624e7021ca7736e370de4939460db2dc755752908a1119c92
+new: temporary containers/listeners/config credentials removed.
+
+Temporary SSH access removed on both hosts: verified.

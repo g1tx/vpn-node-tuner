@@ -1,0 +1,37 @@
+test_apply_failure_rolls_back_runtime_files_and_services (__main__.TunerTests.test_apply_failure_rolls_back_runtime_files_and_services) ... ok
+test_bounded_arithmetic_and_existing_allocations (__main__.TunerTests.test_bounded_arithmetic_and_existing_allocations) ... ok
+test_concurrent_writer_is_refused (__main__.TunerTests.test_concurrent_writer_is_refused) ... ok
+test_existing_filters_and_unknown_options_are_refused (__main__.TunerTests.test_existing_filters_and_unknown_options_are_refused) ... ok
+test_existing_native_nofile_ceilings_are_preserved (__main__.TunerTests.test_existing_native_nofile_ceilings_are_preserved) ... ok
+test_failed_checkpoint_acquisition_preserves_previous_original (__main__.TunerTests.test_failed_checkpoint_acquisition_preserves_previous_original) ... ok
+test_failed_reapply_restores_checkpoint_and_retains_original (__main__.TunerTests.test_failed_reapply_restores_checkpoint_and_retains_original) ... ok
+test_fq_options_replay_without_packet_or_size_display_suffixes (__main__.TunerTests.test_fq_options_replay_without_packet_or_size_display_suffixes) ... ok
+test_incomplete_rollback_is_an_error_and_retains_snapshots (__main__.TunerTests.test_incomplete_rollback_is_an_error_and_retains_snapshots) ... ok
+test_initial_snapshot_copy_and_publish_failure_are_recoverable (__main__.TunerTests.test_initial_snapshot_copy_and_publish_failure_are_recoverable) ... ok
+test_invalid_inputs_never_mutate (__main__.TunerTests.test_invalid_inputs_never_mutate) ... ok
+test_later_sysctl_conflict_reports_source_and_rolls_back (__main__.TunerTests.test_later_sysctl_conflict_reports_source_and_rolls_back) ... ok
+test_legacy_helper_alone_requires_explicit_migration_and_restores (__main__.TunerTests.test_legacy_helper_alone_requires_explicit_migration_and_restores) ... ok
+test_matching_persistent_values_and_unrelated_keys_are_allowed (__main__.TunerTests.test_matching_persistent_values_and_unrelated_keys_are_allowed) ... ok
+test_missing_parameter_fails_before_mutation (__main__.TunerTests.test_missing_parameter_fails_before_mutation) ... ok
+test_mq_preserved_and_each_leaf_restored (__main__.TunerTests.test_mq_preserved_and_each_leaf_restored) ... ok
+test_native_sysctl_precedence_read_failure_rolls_back (__main__.TunerTests.test_native_sysctl_precedence_read_failure_rolls_back) ... ok
+test_readonly_modes_have_no_mutation_or_state (__main__.TunerTests.test_readonly_modes_have_no_mutation_or_state) ... ok
+test_readonly_modes_work_without_root (__main__.TunerTests.test_readonly_modes_work_without_root) ... ok
+test_repeated_apply_keeps_original_and_restarts_service (__main__.TunerTests.test_repeated_apply_keeps_original_and_restarts_service) ... ok
+test_state_symlinks_and_writable_state_refused (__main__.TunerTests.test_state_symlinks_and_writable_state_refused) ... ok
+test_unloaded_bbr_is_checked_and_loaded_only_on_apply (__main__.TunerTests.test_unloaded_bbr_is_checked_and_loaded_only_on_apply) ... ok
+test_unsupported_bbr_and_qdisc_fail_preflight (__main__.TunerTests.test_unsupported_bbr_and_qdisc_fail_preflight) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 94.356s
+
+OK
+test_http_denial_cannot_be_reported_as_successful_load (__main__.BenchmarkTests.test_http_denial_cannot_be_reported_as_successful_load) ... ok
+test_small_file_does_not_count_as_sustained_load (__main__.BenchmarkTests.test_small_file_does_not_count_as_sustained_load) ... ok
+test_sustained_download_and_response_probes (__main__.BenchmarkTests.test_sustained_download_and_response_probes) ... ok
+test_termination_stops_background_downloads (__main__.BenchmarkTests.test_termination_stops_background_downloads) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 23.816s
+
+OK

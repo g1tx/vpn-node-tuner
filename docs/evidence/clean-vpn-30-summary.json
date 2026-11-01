@@ -1,0 +1,1206 @@
+[
+  {
+    "label": "balanced-1",
+    "utc": "2026-11-01T07:50:08.568015+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.33248768300109,
+    "aggregate_mbit_s": 254.4403598786672,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.766838079844422,
+      "median": 7.37946240824945,
+      "p95": 18.34287571372859,
+      "max": 18.457733400126767
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.339,
+      "median": 59.303,
+      "p95": 68.36399999999999,
+      "max": 74.242
+    },
+    "loaded_ttfb_ms": {
+      "count": 43,
+      "min": 98.365,
+      "median": 260.63399999999996,
+      "p95": 411.31,
+      "max": 511.782
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.48,
+      "median": 13.95,
+      "p95": 49.9,
+      "max": 70.8
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 49.892008639308855,
+      "steal_percent": 0.05399568034557235,
+      "iowait_percent": 0.05399568034557235
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 68.03588290840416,
+      "steal_percent": 3.352219074598678,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 283.41796875,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 0
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6332416,
+        "median": 13924352.0,
+        "p95": 44761088,
+        "max": 58650624
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8175254,
+        "user_usec": 1574351,
+        "system_usec": 6600902,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "balanced-2",
+    "utc": "2026-11-01T07:54:29.823744+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.392951083995285,
+    "aggregate_mbit_s": 287.7633097485444,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.199361255134611,
+      "median": 7.883742311021831,
+      "p95": 19.37301344356649,
+      "max": 24.234040043728065
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.074,
+      "median": 59.48,
+      "p95": 62.834,
+      "max": 64.691
+    },
+    "loaded_ttfb_ms": {
+      "count": 43,
+      "min": 137.35,
+      "median": 274.89200000000005,
+      "p95": 477.293,
+      "max": 490.41499999999996
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.5,
+      "median": 12.4,
+      "p95": 44.7,
+      "max": 79.5
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 54.79089465325569,
+      "steal_percent": 0.05293806246691371,
+      "iowait_percent": 0.05293806246691371
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 70.30651340996168,
+      "steal_percent": 1.8199233716475096,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 282.96484375,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 0
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6332416,
+        "median": 13975552.0,
+        "p95": 45584384,
+        "max": 58372096
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8552100,
+        "user_usec": 1517233,
+        "system_usec": 7034867,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "balanced-capped",
+    "utc": "2026-11-01T07:55:08.209917+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.501110460987547,
+    "aggregate_mbit_s": 121.41814157478616,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 4.108565540060998,
+      "median": 4.200541814761564,
+      "p95": 4.298880432077831,
+      "max": 4.410121574828723
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 57.545,
+      "median": 59.8435,
+      "p95": 66.322,
+      "max": 66.954
+    },
+    "loaded_ttfb_ms": {
+      "count": 75,
+      "min": 58.736999999999995,
+      "median": 69.634,
+      "p95": 129.44,
+      "max": 374.227
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.45,
+      "median": 7.385,
+      "p95": 13.3,
+      "max": 76.0
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 30.931549150797736,
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 43.8731379144642,
+      "steal_percent": 3.1715521383950023,
+      "iowait_percent": 0.048053820278712155
+    },
+    "node_min_available_mib": 267.42578125,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 17,
+      "oom_kill": 0,
+      "pgmajfault": 1
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 9756672,
+        "median": 50780160.0,
+        "p95": 64835584,
+        "max": 66404352
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 3017076,
+        "user_usec": 901813,
+        "system_usec": 2115262,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "balanced-soak",
+    "utc": "2026-11-01T07:50:58.082630+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 119.43225043099665,
+    "aggregate_mbit_s": 219.6490587715668,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.861512123423708,
+      "median": 7.126517584694867,
+      "p95": 8.540356052653529,
+      "max": 8.561154988722436
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 57.178,
+      "median": 60.057500000000005,
+      "p95": 75.17500000000001,
+      "max": 123.16199999999999
+    },
+    "loaded_ttfb_ms": {
+      "count": 274,
+      "min": 89.03999999999999,
+      "median": 273.96950000000004,
+      "p95": 395.406,
+      "max": 761.838
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 1188,
+      "min": 6.46,
+      "median": 12.3,
+      "p95": 37.2,
+      "max": 89.7
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 57.18515937989897,
+      "steal_percent": 0.03483713638738896,
+      "iowait_percent": 0.05225570458108344
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 72.70485740116709,
+      "steal_percent": 2.054738226349963,
+      "iowait_percent": 0.016437905810799704
+    },
+    "node_min_available_mib": 297.08203125,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 1
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 542,
+        "min": 10084352,
+        "median": 15177728.0,
+        "p95": 23474176,
+        "max": 58900480
+      },
+      "swap_current_bytes": {
+        "count": 542,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 57000254,
+        "user_usec": 11610266,
+        "system_usec": 45389989,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "baseline-1",
+    "utc": "2026-10-31T12:43:43.768511+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 18.83563849100028,
+    "aggregate_mbit_s": 290.48014501980765,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.615876825244902,
+      "median": 7.323605172935277,
+      "p95": 32.987405116415545,
+      "max": 40.008759409920806
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 57.071,
+      "median": 61.1655,
+      "p95": 68.903,
+      "max": 73.752
+    },
+    "loaded_ttfb_ms": {
+      "count": 43,
+      "min": 116.767,
+      "median": 216.26000000000002,
+      "p95": 513.131,
+      "max": 1108.969
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 196,
+      "min": 6.58,
+      "median": 12.7,
+      "p95": 46.2,
+      "max": 70.6
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 46.47418101054969,
+      "steal_percent": 0.0555247084952804,
+      "iowait_percent": 0.0555247084952804
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 68.97025171624713,
+      "steal_percent": 5.583524027459954,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 277.41796875,
+    "node_peak_swap_mib": 0.26171875,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 2,
+      "oom_kill": 0,
+      "pgmajfault": 13
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 222,
+        "min": 6459392,
+        "median": 12017664.0,
+        "p95": 38977536,
+        "max": 53456896
+      },
+      "swap_current_bytes": {
+        "count": 222,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 7561351,
+        "user_usec": 1175719,
+        "system_usec": 6385631,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "baseline-2",
+    "utc": "2026-11-01T07:30:49.864831+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.395370732992887,
+    "aggregate_mbit_s": 291.6100753842848,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.618863178614197,
+      "median": 8.165667620383008,
+      "p95": 21.7556444898665,
+      "max": 23.350277161322065
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 55.84,
+      "median": 59.765,
+      "p95": 360.836,
+      "max": 419.541
+    },
+    "loaded_ttfb_ms": {
+      "count": 42,
+      "min": 110.095,
+      "median": 285.82399999999996,
+      "p95": 716.311,
+      "max": 1212.612
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 196,
+      "min": 6.5,
+      "median": 11.6,
+      "p95": 37.0,
+      "max": 61.8
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 53.53319057815846,
+      "steal_percent": 0.05353319057815846,
+      "iowait_percent": 0.05353319057815846
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 71.48399612027158,
+      "steal_percent": 1.9398642095053347,
+      "iowait_percent": 0.04849660523763336
+    },
+    "node_min_available_mib": 306.5625,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 2,
+      "pswpout": 205,
+      "oom_kill": 0,
+      "pgmajfault": 111
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 13996032,
+        "median": 32866304.0,
+        "p95": 62259200,
+        "max": 74362880
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 405504,
+        "median": 405504.0,
+        "p95": 405504,
+        "max": 405504
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8462959,
+        "user_usec": 1440399,
+        "system_usec": 7022559,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "baseline-3",
+    "utc": "2026-11-01T07:35:45.730091+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.377321765001398,
+    "aggregate_mbit_s": 277.28920829210443,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.029411173509843,
+      "median": 7.920279977649223,
+      "p95": 19.320654313125626,
+      "max": 20.892092183980974
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.141999999999996,
+      "median": 59.06,
+      "p95": 68.881,
+      "max": 76.523
+    },
+    "loaded_ttfb_ms": {
+      "count": 44,
+      "min": 122.423,
+      "median": 282.7015,
+      "p95": 417.35,
+      "max": 692.473
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.43,
+      "median": 12.3,
+      "p95": 47.2,
+      "max": 84.5
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 52.850027670171556,
+      "steal_percent": 0.05534034311012728,
+      "iowait_percent": 0.11068068622025456
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 71.51747247486836,
+      "steal_percent": 1.9626615605552895,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 286.625,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 0
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6377472,
+        "median": 14049280.0,
+        "p95": 48619520,
+        "max": 54697984
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8725403,
+        "user_usec": 1738376,
+        "system_usec": 6987027,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "baseline-4",
+    "utc": "2026-11-01T07:53:49.873526+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.385165768006118,
+    "aggregate_mbit_s": 262.6288311646589,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.632196189179322,
+      "median": 7.559291676748261,
+      "p95": 16.606585825996227,
+      "max": 17.06502860275347
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.578,
+      "median": 58.798,
+      "p95": 61.89,
+      "max": 64.05900000000001
+    },
+    "loaded_ttfb_ms": {
+      "count": 42,
+      "min": 146.769,
+      "median": 265.45050000000003,
+      "p95": 425.268,
+      "max": 668.5600000000001
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 198,
+      "min": 6.5,
+      "median": 12.149999999999999,
+      "p95": 40.3,
+      "max": 76.9
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 53.48338692390139,
+      "steal_percent": 0.05359056806002144,
+      "iowait_percent": 0.0
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 71.01102060373742,
+      "steal_percent": 2.7791087685673217,
+      "iowait_percent": 0.04791566842357451
+    },
+    "node_min_available_mib": 297.5859375,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 0
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6320128,
+        "median": 13461504.0,
+        "p95": 39518208,
+        "max": 55967744
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8694606,
+        "user_usec": 1496025,
+        "system_usec": 7198582,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "baseline-capped",
+    "utc": "2026-11-01T07:38:18.867579+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.48605080100242,
+    "aggregate_mbit_s": 121.44424578311846,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 4.1150918967875505,
+      "median": 4.200451829306779,
+      "p95": 4.292465319216605,
+      "max": 4.305514050971207
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 55.809,
+      "median": 57.57299999999999,
+      "p95": 59.797999999999995,
+      "max": 63.387
+    },
+    "loaded_ttfb_ms": {
+      "count": 77,
+      "min": 58.467999999999996,
+      "median": 64.466,
+      "p95": 117.545,
+      "max": 273.22200000000004
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.43,
+      "median": 6.845,
+      "p95": 11.3,
+      "max": 23.3
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 27.726532826912642,
+      "steal_percent": 0.05425935973955507,
+      "iowait_percent": 0.0
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 45.658396946564885,
+      "steal_percent": 1.765267175572519,
+      "iowait_percent": 0.04770992366412214
+    },
+    "node_min_available_mib": 269.44140625,
+    "node_peak_swap_mib": 38.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 1
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6402048,
+        "median": 53284864.0,
+        "p95": 63246336,
+        "max": 66019328
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 3268178,
+        "user_usec": 1088536,
+        "system_usec": 2179641,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "bbr-codel-1",
+    "utc": "2026-11-01T07:34:27.089368+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.4371120089927,
+    "aggregate_mbit_s": 265.30469363670994,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.7410188283932,
+      "median": 7.084303052618724,
+      "p95": 16.882116697991933,
+      "max": 17.247476856635004
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.124,
+      "median": 57.844,
+      "p95": 62.81399999999999,
+      "max": 137.671
+    },
+    "loaded_ttfb_ms": {
+      "count": 37,
+      "min": 146.727,
+      "median": 303.30899999999997,
+      "p95": 521.71,
+      "max": 1763.05
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 198,
+      "min": 6.46,
+      "median": 12.7,
+      "p95": 62.4,
+      "max": 82.0
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 54.705882352941174,
+      "steal_percent": 0.0,
+      "iowait_percent": 0.053475935828877004
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 66.37848222862632,
+      "steal_percent": 1.585014409221902,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 252.85546875,
+    "node_peak_swap_mib": 38.47265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 2
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 6266880,
+        "median": 14755840.0,
+        "p95": 48685056,
+        "max": 56463360
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8172476,
+        "user_usec": 1342248,
+        "system_usec": 6830228,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "cubic-fq-1",
+    "utc": "2026-11-01T07:35:06.328654+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.3767547650059,
+    "aggregate_mbit_s": 240.30472361451885,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.367103710845667,
+      "median": 7.2965399060790865,
+      "p95": 13.00941940166031,
+      "max": 13.079996414243652
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.588,
+      "median": 58.6895,
+      "p95": 63.150999999999996,
+      "max": 144.18200000000002
+    },
+    "loaded_ttfb_ms": {
+      "count": 43,
+      "min": 139.844,
+      "median": 247.976,
+      "p95": 410.006,
+      "max": 1155.1480000000001
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.57,
+      "median": 13.850000000000001,
+      "p95": 49.6,
+      "max": 71.5
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 49.384038564542045,
+      "steal_percent": 0.05356186395286556,
+      "iowait_percent": 0.0
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 66.33093525179856,
+      "steal_percent": 2.8297362110311752,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 289.75390625,
+    "node_peak_swap_mib": 38.47265625,
+    "node_vmstat_delta": {
+      "pswpin": 0,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 0
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 141,
+        "min": 6152192,
+        "median": 12828672,
+        "p95": 45621248,
+        "max": 55832576
+      },
+      "swap_current_bytes": {
+        "count": 141,
+        "min": 0,
+        "median": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 7571412,
+        "user_usec": 1239816,
+        "system_usec": 6331597,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "lowat-1",
+    "utc": "2026-11-01T07:33:48.064742+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.358260734996293,
+    "aggregate_mbit_s": 257.1314936589563,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 6.324264631101274,
+      "median": 7.405565905770803,
+      "p95": 17.227443099679373,
+      "max": 17.602368412618663
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.721000000000004,
+      "median": 58.559,
+      "p95": 61.202,
+      "max": 62.285
+    },
+    "loaded_ttfb_ms": {
+      "count": 45,
+      "min": 137.673,
+      "median": 246.221,
+      "p95": 397.437,
+      "max": 729.796
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 198,
+      "min": 6.57,
+      "median": 12.25,
+      "p95": 52.3,
+      "max": 80.1
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 55.09656652360515,
+      "steal_percent": 0.0,
+      "iowait_percent": 0.0536480686695279
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 70.7352234502643,
+      "steal_percent": 2.0663142719846226,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 326.875,
+    "node_peak_swap_mib": 38.72265625,
+    "node_vmstat_delta": {
+      "pswpin": 2,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 2
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 7118848,
+        "median": 14286848.0,
+        "p95": 31006720,
+        "max": 39436288
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8841379,
+        "user_usec": 1409296,
+        "system_usec": 7432082,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "tuned-1",
+    "utc": "2026-11-01T07:31:37.568054+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.334517103998223,
+    "aggregate_mbit_s": 249.69977819845394,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.681929892070877,
+      "median": 6.956591778696199,
+      "p95": 15.59013683167894,
+      "max": 18.571805622628347
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 55.836,
+      "median": 58.144000000000005,
+      "p95": 61.214,
+      "max": 62.019999999999996
+    },
+    "loaded_ttfb_ms": {
+      "count": 37,
+      "min": 168.261,
+      "median": 306.462,
+      "p95": 1148.6879999999999,
+      "max": 1253.276
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 195,
+      "min": 6.6,
+      "median": 13.3,
+      "p95": 52.5,
+      "max": 87.4
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 55.09209100758397,
+      "steal_percent": 0.05417118093174431,
+      "iowait_percent": 0.05417118093174431
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 69.31927133269416,
+      "steal_percent": 1.725790987535954,
+      "iowait_percent": 0.0
+    },
+    "node_min_available_mib": 276.1796875,
+    "node_peak_swap_mib": 36.22265625,
+    "node_vmstat_delta": {
+      "pswpin": 4,
+      "pswpout": 0,
+      "oom_kill": 0,
+      "pgmajfault": 58
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 19189760,
+        "median": 27254784.0,
+        "p95": 54767616,
+        "max": 72572928
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8429703,
+        "user_usec": 1594682,
+        "system_usec": 6835021,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  },
+  {
+    "label": "tuned-2",
+    "utc": "2026-11-01T07:32:41.477265+00:00",
+    "valid_flows": 30,
+    "all_flows_valid": true,
+    "parallel_overlap_s": 19.33430481600226,
+    "aggregate_mbit_s": 253.75402505316373,
+    "flow_mbit_s": {
+      "count": 30,
+      "min": 5.7673003105675305,
+      "median": 7.569010303820187,
+      "p95": 16.21291666047939,
+      "max": 16.691750213322845
+    },
+    "idle_ttfb_ms": {
+      "count": 20,
+      "min": 56.312,
+      "median": 58.831999999999994,
+      "p95": 65.05900000000001,
+      "max": 66.953
+    },
+    "loaded_ttfb_ms": {
+      "count": 41,
+      "min": 144.13,
+      "median": 281.775,
+      "p95": 556.471,
+      "max": 764.719
+    },
+    "probe_failures": 0,
+    "ping_rtt_ms": {
+      "count": 200,
+      "min": 6.48,
+      "median": 11.95,
+      "p95": 64.3,
+      "max": 87.8
+    },
+    "node_cpu_full_parallel": {
+      "busy_percent": 55.22309711286089,
+      "steal_percent": 0.05249343832020997,
+      "iowait_percent": 0.10498687664041995
+    },
+    "generator_cpu_loaded": {
+      "busy_percent": 70.48249763481552,
+      "steal_percent": 2.128666035950804,
+      "iowait_percent": 0.04730368968779565
+    },
+    "node_min_available_mib": 255.45703125,
+    "node_peak_swap_mib": 38.97265625,
+    "node_vmstat_delta": {
+      "pswpin": 14,
+      "pswpout": 711,
+      "oom_kill": 0,
+      "pgmajfault": 23
+    },
+    "node_container": {
+      "memory_current_bytes": {
+        "count": 142,
+        "min": 22536192,
+        "median": 27432960.0,
+        "p95": 58798080,
+        "max": 70639616
+      },
+      "swap_current_bytes": {
+        "count": 142,
+        "min": 0,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0
+      },
+      "memory_events_delta": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat_delta": {
+        "usage_usec": 8679719,
+        "user_usec": 1530036,
+        "system_usec": 7149683,
+        "nr_throttled": 0,
+        "throttled_usec": 0
+      }
+    }
+  }
+]

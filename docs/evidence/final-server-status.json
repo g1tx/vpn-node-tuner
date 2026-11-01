@@ -1,0 +1,44 @@
+{
+  "kernel": "6.8.0-147-generic",
+  "cpu_count": 1,
+  "mem_total_mib": 1967.97265625,
+  "temporary_memory_limit_removed": true,
+  "queue_service_enabled": "enabled",
+  "queue_service_active": "active",
+  "qdisc": "qdisc fq 8001: root refcnt 2 limit 10000p flow_limit 100p buckets 1024 orphan_mask 1023 quantum 3028b initial_quantum 15140b low_rate_threshold 550Kbit refill_delay 40ms timer_slack 10us horizon 10s horizon_drop",
+  "sysctl": {
+    "net.core.default_qdisc": "fq",
+    "net.ipv4.tcp_congestion_control": "bbr",
+    "net.core.rmem_max": "16777216",
+    "net.core.wmem_max": "16777216",
+    "net.ipv4.tcp_rmem": "4096\t131072\t16777216",
+    "net.ipv4.tcp_wmem": "4096\t16384\t16777216",
+    "net.ipv4.tcp_mtu_probing": "1",
+    "net.ipv4.tcp_mem": "21843\t29125\t43686"
+  },
+  "containers": [
+    "remnawave-nginx Up 4 minutes",
+    "remnanode Up 4 minutes"
+  ],
+  "tuner_sha256": "bae83e7b80751bd6d67914a6d004a223a441672b78ad7b4a8aeb1ecf0cc92c7a",
+  "original_snapshot_retained": true,
+  "checkpoint_absent": true,
+  "final_tests": {
+    "tuner": 23,
+    "benchmark": 4,
+    "passed": true,
+    "shellcheck": "passed"
+  },
+  "test_listener_11080_closed": true,
+  "test_listener_18443_closed": true,
+  "test_listener_18444_closed": true,
+  "private_lab_files_removed": [
+    "production-client.json",
+    "production-inbound.json",
+    "xray-client.json",
+    "xray-server.json",
+    "tls.key",
+    "tls.crt"
+  ],
+  "temporary_ssh_key_removed": true
+}

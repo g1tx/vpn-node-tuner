@@ -1,0 +1,70 @@
+{
+  "method": "4 concurrent public Ubuntu ISO HTTPS downloads through existing REALITY/Vision node; 15s; each flow capped 10MiB/s; 30 concurrent small HTTPS probes during load; client and server share 1vCPU host",
+  "kernel": "6.8.0-147-generic",
+  "mem_total_mib": 961.617,
+  "mem_available_start_mib": 503.574,
+  "mem_available_min_mib": 364.289,
+  "peak_swap_used_mib": 2.523,
+  "peak_xray_rss_sum_mib": 37.359,
+  "cpu_measurement_phase": "bulk-load window only",
+  "cpu_measurement_duration_s": 14.788,
+  "cpu_busy_pct_including_steal": 66.554,
+  "cpu_steal_pct": 2.365,
+  "vmstat_delta": {
+    "pswpin": 0,
+    "pswpout": 634,
+    "pgmajfault": 45,
+    "oom_kill": 0
+  },
+  "download_total_bytes": 498604471,
+  "aggregate_mbit_s": 265.864,
+  "downloads": [
+    {
+      "duration_s": 15.001109,
+      "bytes": 30671933,
+      "speed_Bps": 2044644.0,
+      "http": "200"
+    },
+    {
+      "duration_s": 15.001926,
+      "bytes": 151639933,
+      "speed_Bps": 10108030.0,
+      "http": "200"
+    },
+    {
+      "duration_s": 15.003306,
+      "bytes": 158055933,
+      "speed_Bps": 10534740.0,
+      "http": "200"
+    },
+    {
+      "duration_s": 15.000612,
+      "bytes": 158236672,
+      "speed_Bps": 10548681.0,
+      "http": "200"
+    }
+  ],
+  "concurrent_https": {
+    "total": 30,
+    "successful": 30,
+    "median_ms": 1599.154,
+    "p95_ms": 1701.226
+  },
+  "benchmark_summary": [
+    "idle: 10 successful probes; TTFB median 83.04 ms, p95 90.23 ms",
+    "loaded: 37 successful probes; TTFB median 93.40 ms, p95 1082.59 ms",
+    "Probe errors (curl failure or HTTP outside 200..399): 0",
+    "Failed downloads: 0 / 4",
+    "Aggregate download rate over longest download: 265.86 Mbit/s",
+    "Raw probe timings: probes.tsv (seconds).",
+    "Per-download fields: duration_s, bytes, bytes_per_second, HTTP code.",
+    "Download exit 28 means the requested time limit; other nonzero codes indicate failure.",
+    "If downloads finish early or fail, this is not a sustained loaded-latency test."
+  ],
+  "valid_bulk_load": true,
+  "limitations": [
+    "One credential with concurrent requests, not 30 independently active users.",
+    "Client/server share the same 1vCPU; download is public WAN and rate-capped, not a gigabit saturation result.",
+    "No before/after comparison was performed in this memory-capped run."
+  ]
+}

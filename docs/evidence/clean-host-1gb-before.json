@@ -1,0 +1,63 @@
+{
+  "captured_at_utc": "2026-10-31T12:41:55Z",
+  "kernel": {
+    "returncode": 0,
+    "stdout": "Linux cira-zxpi3p.local 6.8.0-147-generic #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:33:16 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+    "stderr": ""
+  },
+  "os": {
+    "returncode": 0,
+    "stdout": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo",
+    "stderr": ""
+  },
+  "cpu": {
+    "returncode": 0,
+    "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  1\nOn-line CPU(s) list:                     0\nVendor ID:                               AuthenticAMD\nBIOS Vendor ID:                          Red Hat\nModel name:                              AMD Ryzen 9 9950X 16-Core Processor\nBIOS Model name:                         RHEL 10.0.0 PC (i440FX + PIIX, 1996)  CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              26\nModel:                                   68\nThread(s) per core:                      1\nCore(s) per socket:                      1\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                8583.82\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 clzero xsaveerptr wbnoinvd arat npt lbrv nrip_save tsc_scale vmcb_clean flushbyasid pausefilter pfthreshold v_vmsave_vmload vgif vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b overflow_recov succor fsrm avx512_vp2intersect flush_l1d arch_capabilities srso_user_kernel_no\nVirtualization:                          AMD-V\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               64 KiB (1 instance)\nL1i cache:                               64 KiB (1 instance)\nL2 cache:                                512 KiB (1 instance)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP disabled; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected",
+    "stderr": ""
+  },
+  "memory": {
+    "returncode": 0,
+    "stdout": "MemTotal:         825168 kB\nMemFree:          121832 kB\nMemAvailable:     408420 kB\nBuffers:           20072 kB\nCached:           369732 kB\nSwapCached:            0 kB\nActive:           423420 kB\nInactive:          48872 kB\nActive(anon):      96420 kB\nInactive(anon):        0 kB\nActive(file):     327000 kB\nInactive(file):    48872 kB\nUnevictable:       31292 kB\nMlocked:           27292 kB\nSwapTotal:        524284 kB\nSwapFree:         524284 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               520 kB\nWriteback:             0 kB\nAnonPages:        113836 kB\nMapped:           172336 kB\nShmem:              5136 kB\nKReclaimable:      29804 kB\nSlab:             115172 kB\nSReclaimable:      29804 kB\nSUnreclaim:        85368 kB\nKernelStack:        7144 kB\nPageTables:         3320 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:      936868 kB\nCommitted_AS:     642032 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       24632 kB\nVmallocChunk:          0 kB\nPercpu:           122880 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      131072 kB\nDirectMap2M:      917504 kB\nDirectMap1G:           0 kB",
+    "stderr": ""
+  },
+  "swap": {
+    "returncode": 0,
+    "stdout": "NAME      TYPE      SIZE USED PRIO\n/swapfile file 536866816    0   -2",
+    "stderr": ""
+  },
+  "disk": {
+    "returncode": 0,
+    "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/vda2        20G  4.1G   15G  22% /",
+    "stderr": ""
+  },
+  "interfaces": {
+    "returncode": 0,
+    "stdout": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nens3             UP             lab-node/24 2a10:fa81:1b00:44::1/48 fe80::5054:ff:fe6a:277d/64 \ndocker0          DOWN           172.17.0.1/16",
+    "stderr": ""
+  },
+  "route": {
+    "returncode": 0,
+    "stdout": "default via 31.77.75.1 dev ens3 onlink",
+    "stderr": ""
+  },
+  "qdisc": {
+    "returncode": 0,
+    "stdout": "qdisc noqueue 0: dev lo root refcnt 2 \nqdisc fq_codel 0: dev ens3 root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 \nqdisc noqueue 0: dev docker0 root refcnt 2",
+    "stderr": ""
+  },
+  "sysctl": {
+    "returncode": 0,
+    "stdout": "net.ipv4.tcp_congestion_control = cubic\nnet.ipv4.tcp_available_congestion_control = reno cubic\nnet.core.default_qdisc = fq_codel\nnet.core.rmem_max = 212992\nnet.core.wmem_max = 212992\nnet.ipv4.tcp_rmem = 4096\t131072\t5490240\nnet.ipv4.tcp_wmem = 4096\t16384\t4194304\nnet.ipv4.tcp_mem = 8040\t10723\t16080\nnet.ipv4.tcp_notsent_lowat = 4294967295\nnet.ipv4.tcp_limit_output_bytes = 1048576\nnet.ipv4.tcp_mtu_probing = 0\nvm.swappiness = 60",
+    "stderr": ""
+  },
+  "services": {
+    "returncode": 0,
+    "stdout": "UNIT                        LOAD   ACTIVE SUB     DESCRIPTION\n  containerd.service          loaded active running containerd container runtime\n  cron.service                loaded active running Regular background program processing daemon\n  dbus.service                loaded active running D-Bus System Message Bus\n  docker.service              loaded active running Docker Application Container Engine\n  getty@tty1.service          loaded active running Getty on tty1\n  ModemManager.service        loaded active running Modem Manager\n  multipathd.service          loaded active running Device-Mapper Multipath Device Controller\n  polkit.service              loaded active running Authorization Manager\n  qemu-guest-agent.service    loaded active running QEMU Guest Agent\n  rsyslog.service             loaded active running System Logging Service\n  ssh.service                 loaded active running OpenBSD Secure Shell server\n  systemd-journald.service    loaded active running Journal Service\n  systemd-logind.service      loaded active running User Login Management\n  systemd-networkd.service    loaded active running Network Configuration\n  systemd-resolved.service    loaded active running Network Name Resolution\n  systemd-timesyncd.service   loaded active running Network Time Synchronization\n  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files\n  udisks2.service             loaded active running Disk Manager\n  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown\n  user@0.service              loaded active running User Manager for UID 0\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n20 loaded units listed.",
+    "stderr": ""
+  },
+  "docker": {
+    "returncode": 0,
+    "stdout": "exit-node-clean-xray Up 3 seconds",
+    "stderr": ""
+  }
+}

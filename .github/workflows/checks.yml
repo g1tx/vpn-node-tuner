@@ -1,0 +1,18 @@
+name: checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  bash:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax and ShellCheck
+        run: |
+          bash -n tune.sh
+          bash -n benchmark.sh
+          bash -n tests/run.sh
+          shellcheck --severity=warning tune.sh benchmark.sh tests/run.sh
+      - name: Isolated regression tests
+        run: sudo bash tests/run.sh

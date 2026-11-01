@@ -1,0 +1,54 @@
+test_apply_failure_rolls_back_runtime_files_and_services (__main__.TunerTests.test_apply_failure_rolls_back_runtime_files_and_services) ... ok
+test_balanced_fifo_fallback_and_supported_default_qdisc (__main__.TunerTests.test_balanced_fifo_fallback_and_supported_default_qdisc) ... ok
+test_balanced_preserves_cubic_fq_codel_without_bbr (__main__.TunerTests.test_balanced_preserves_cubic_fq_codel_without_bbr) ... ok
+test_boot_helper_reserves_original_handles_including_mq_root (__main__.TunerTests.test_boot_helper_reserves_original_handles_including_mq_root) ... ok
+test_boot_helper_reserves_original_handles_with_implicit_fq_leaves (__main__.TunerTests.test_boot_helper_reserves_original_handles_with_implicit_fq_leaves) ... ok
+test_bounded_arithmetic_and_existing_allocations (__main__.TunerTests.test_bounded_arithmetic_and_existing_allocations) ... ok
+test_concurrent_writer_is_refused (__main__.TunerTests.test_concurrent_writer_is_refused) ... ok
+test_existing_filters_and_unknown_options_are_refused (__main__.TunerTests.test_existing_filters_and_unknown_options_are_refused) ... ok
+test_existing_fq_enables_pacing_and_retains_queue_caps (__main__.TunerTests.test_existing_fq_enables_pacing_and_retains_queue_caps) ... ok
+test_existing_native_nofile_ceilings_are_preserved (__main__.TunerTests.test_existing_native_nofile_ceilings_are_preserved) ... ok
+test_failed_checkpoint_acquisition_preserves_previous_original (__main__.TunerTests.test_failed_checkpoint_acquisition_preserves_previous_original) ... ok
+test_failed_reapply_restores_checkpoint_and_retains_original (__main__.TunerTests.test_failed_reapply_restores_checkpoint_and_retains_original) ... ok
+test_fq_codel_apply_revert_cycles_with_explicit_and_implicit_handles (__main__.TunerTests.test_fq_codel_apply_revert_cycles_with_explicit_and_implicit_handles) ... ok
+test_fq_options_replay_without_packet_or_size_display_suffixes (__main__.TunerTests.test_fq_options_replay_without_packet_or_size_display_suffixes) ... ok
+test_fq_pacing_verification_failure_rolls_back (__main__.TunerTests.test_fq_pacing_verification_failure_rolls_back) ... ok
+test_generated_helper_captures_profile_and_fifo_fallback (__main__.TunerTests.test_generated_helper_captures_profile_and_fifo_fallback) ... ok
+test_incomplete_rollback_is_an_error_and_retains_snapshots (__main__.TunerTests.test_incomplete_rollback_is_an_error_and_retains_snapshots) ... ok
+test_initial_snapshot_copy_and_publish_failure_are_recoverable (__main__.TunerTests.test_initial_snapshot_copy_and_publish_failure_are_recoverable) ... ok
+test_invalid_inputs_never_mutate (__main__.TunerTests.test_invalid_inputs_never_mutate) ... ok
+test_invalid_profile_fails_before_any_mutation (__main__.TunerTests.test_invalid_profile_fails_before_any_mutation) ... ok
+test_later_sysctl_conflict_reports_source_and_rolls_back (__main__.TunerTests.test_later_sysctl_conflict_reports_source_and_rolls_back) ... ok
+test_legacy_helper_alone_requires_explicit_migration_and_restores (__main__.TunerTests.test_legacy_helper_alone_requires_explicit_migration_and_restores) ... ok
+test_malformed_fq_bands_and_weights_fail_before_mutation (__main__.TunerTests.test_malformed_fq_bands_and_weights_fail_before_mutation) ... ok
+test_matching_persistent_values_and_unrelated_keys_are_allowed (__main__.TunerTests.test_matching_persistent_values_and_unrelated_keys_are_allowed) ... ok
+test_missing_parameter_fails_before_mutation (__main__.TunerTests.test_missing_parameter_fails_before_mutation) ... ok
+test_modern_fq_bands_weights_preserved_and_restored (__main__.TunerTests.test_modern_fq_bands_weights_preserved_and_restored) ... ok
+test_mq_kind_changes_reserve_original_handles (__main__.TunerTests.test_mq_kind_changes_reserve_original_handles) ... ok
+test_mq_preserved_and_each_leaf_restored (__main__.TunerTests.test_mq_preserved_and_each_leaf_restored) ... ok
+test_native_sysctl_precedence_read_failure_rolls_back (__main__.TunerTests.test_native_sysctl_precedence_read_failure_rolls_back) ... ok
+test_profile_change_and_repeat_preserve_first_original (__main__.TunerTests.test_profile_change_and_repeat_preserve_first_original) ... ok
+test_readonly_modes_have_no_mutation_or_state (__main__.TunerTests.test_readonly_modes_have_no_mutation_or_state) ... ok
+test_readonly_modes_work_without_root (__main__.TunerTests.test_readonly_modes_work_without_root) ... ok
+test_repeated_apply_keeps_original_and_restarts_service (__main__.TunerTests.test_repeated_apply_keeps_original_and_restarts_service) ... ok
+test_revert_recreates_fq_codel_when_immutable_flows_differ (__main__.TunerTests.test_revert_recreates_fq_codel_when_immutable_flows_differ) ... ok
+test_revert_refuses_swapped_mq_handles_before_qdisc_mutation (__main__.TunerTests.test_revert_refuses_swapped_mq_handles_before_qdisc_mutation) ... ok
+test_rollback_before_qdisc_change_handles_initialized_fq_codel (__main__.TunerTests.test_rollback_before_qdisc_change_handles_initialized_fq_codel) ... ok
+test_state_symlinks_and_writable_state_refused (__main__.TunerTests.test_state_symlinks_and_writable_state_refused) ... ok
+test_template_nofile_is_skipped_without_clobbering_existing_dropin (__main__.TunerTests.test_template_nofile_is_skipped_without_clobbering_existing_dropin) ... ok
+test_unloaded_bbr_is_checked_and_loaded_only_on_apply (__main__.TunerTests.test_unloaded_bbr_is_checked_and_loaded_only_on_apply) ... ok
+test_unsupported_bbr_and_qdisc_fail_preflight (__main__.TunerTests.test_unsupported_bbr_and_qdisc_fail_preflight) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 80.963s
+
+OK
+test_http_denial_cannot_be_reported_as_successful_load (__main__.BenchmarkTests.test_http_denial_cannot_be_reported_as_successful_load) ... ok
+test_small_file_does_not_count_as_sustained_load (__main__.BenchmarkTests.test_small_file_does_not_count_as_sustained_load) ... ok
+test_sustained_download_and_response_probes (__main__.BenchmarkTests.test_sustained_download_and_response_probes) ... ok
+test_termination_stops_background_downloads (__main__.BenchmarkTests.test_termination_stops_background_downloads) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 23.399s
+
+OK
