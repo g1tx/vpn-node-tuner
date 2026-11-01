@@ -128,4 +128,4 @@ CI запускает проверки на Ubuntu 24.04. Fixture-тесты и�
 
 Основания: [TCP sysctl Linux](https://docs.kernel.org/networking/ip-sysctl.html), [default_qdisc](https://docs.kernel.org/admin-guide/sysctl/net.html#default-qdisc), [масштабирование сетевого стека](https://docs.kernel.org/networking/scaling.html), [Docker host networking](https://docs.docker.com/engine/network/drivers/host/), [Docker logging](https://docs.docker.com/engine/logging/configure/), [Xray transport](https://xtls.github.io/en/config/transport.html).
 
-Лицензия: [MIT](LICENSE).
+Лицензия: [MIT](../LICENSE).
